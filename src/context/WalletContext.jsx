@@ -62,7 +62,7 @@ const WalletProvider = ({ children }) => {
       try {
         await window.ethereum.request({
           method: "wallet_switchEthereumChain",
-          params: [{ chainId: "0xa045c" }],
+          params: [{ chainId: "0x1ad1ba8" }],
         });
 
         const accounts = await window.ethereum.request({
@@ -87,17 +87,15 @@ const WalletProvider = ({ children }) => {
               method: "wallet_addEthereumChain",
               params: [
                 {
-                  chainId: "0xa045c",
-                  chainName: "EDU Chain Testnet",
-                  rpcUrls: ["https://rpc.open-campus-codex.gelato.digital"],
+                  chainId: "0x1ad1ba8",
+                  chainName: "Ancient8 Testnet",
+                  rpcUrls: ["https://rpcv2-testnet.ancient8.gg"],
                   nativeCurrency: {
-                    name: "EDU",
-                    symbol: "EDU",
+                    name: "ETH",
+                    symbol: "ETH",
                     decimals: 18,
                   },
-                  blockExplorerUrls: [
-                    "https://opencampus-codex.blockscout.com",
-                  ],
+                  blockExplorerUrls: ["https://testnet.a8scan.io/"],
                 },
               ],
             });

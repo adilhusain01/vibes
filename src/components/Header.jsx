@@ -15,7 +15,7 @@ const Header = () => {
   };
 
   useEffect(() => {
-    if (network === "EDU Chain Testnet") {
+    if (network === "Ancient8 Testnet") {
       setIsCorrectNetwork(true);
     } else {
       setIsCorrectNetwork(false);
@@ -57,7 +57,7 @@ const Header = () => {
               onClick={switchNetwork}
               className="flex items-center gap-2 px-3 md:px-6 py-1 md:py-3 bg-gradient-to-r from-red-500 to-pink-500 rounded-md md:rounded-xl text-white font-medium hover:opacity-90 transition-all duration-300 shadow-lg shadow-red-500/25"
             >
-              Switch to EDU
+              Switch to Ancient8
             </button>
           ) : (
             <button className="flex items-center gap-2 px-3 md:px-6 py-1 md:py-3 bg-gradient-to-r from-red-500 to-pink-500 rounded-md md:rounded-xl text-white font-medium hover:opacity-90 transition-all duration-300 shadow-lg shadow-red-500/25">
